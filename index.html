@@ -154,10 +154,6 @@
     </section>
 
 
-
-
-
-
     <section id="about"
         style="background-image: url('https://delmarvapublications.com/wp-content/themes/book-publisher-pro_0.0.4/assets/images/about/about_bg.jpg'); background-size: cover; background-position: center; padding: 50px 0;">
         <div class="container">
@@ -337,7 +333,10 @@
 
 
 
-
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    
 
 
 
@@ -397,7 +396,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+    <script>
+        window.addEventListener("load", function() {
+            document.getElementById("loader").style.display = "none";
+        });
+    </script>
+    
 
 </body>
 
